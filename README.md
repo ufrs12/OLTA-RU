@@ -119,6 +119,27 @@ classDef class3 fill:#455744, stroke:#000, stroke-width:4px
 classDef class4 fill:#5e4832, stroke:#000, stroke-width:4px
 classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
 
+    Z([Реактивы для травления])
+    A([Хлорное железо]):::class3
+    B([Другие]):::class2
+    C([Сухое]):::class3
+    D([Водное]):::class4
+    
+    Z-->A;
+    Z-->B;
+
+    A-->C;
+    A-->D;
+```
+
+```mermaid
+graph TD;
+classDef class1 fill:#544457, stroke:#000, stroke-width:4px
+classDef class2 fill:#32465e, stroke:#000, stroke-width:4px
+classDef class3 fill:#455744, stroke:#000, stroke-width:4px
+classDef class4 fill:#5e4832, stroke:#000, stroke-width:4px
+classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
+
     Z([Масштаб])
     A([Отдельными платами]):::class3
     B([Кучей плат на одном листе]):::class2
