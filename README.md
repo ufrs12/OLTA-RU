@@ -171,7 +171,7 @@ classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
     Z([Паяльная маска])
     A([С маской]):::class3
     B([Без маски]):::class4
-    C([Однокомпонентная]):::class3
+    C([Однокомпонентная]):::class4
     D([Двухкомпонентная]):::class3
     
     Z-->A;
