@@ -82,7 +82,7 @@ classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
     Z-->A;
     Z-->B;
 
-    B-->С;
-    B-->В;
+    B-->C;
+    B-->D;
 ```
 
