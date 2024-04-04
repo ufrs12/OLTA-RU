@@ -42,7 +42,7 @@ classDef class3 fill:#455744, stroke:#000, stroke-width:4px
 classDef class4 fill:#5e4832, stroke:#000, stroke-width:4px
 classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
 
-    Z([Нам нужны печатные платы]):::class3
+    Z([Масштаб]):::class3
     A([Отдельными платами]):::class3
     B([Кучей плат на одном листе]):::class2
     C([С технологическими полями]):::class4
