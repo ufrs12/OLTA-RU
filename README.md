@@ -8,15 +8,17 @@ Open Logical Tools Architecture
 ```mermaid
 graph TD;
 classDef class1 fill:#455744, stroke:#000, stroke-width:4px
+classDef class2 fill:#544457, stroke:#000, stroke-width:4px
+
     Z([Нам нужны печатные платы]):::class1
     A([Отдельными платами]):::class1
-    B([Кучей плат на одном листе]):::class1
+    B([Кучей плат на одном листе]):::class2
     C([С технологическими полями]):::class1
     D([В чистовой размер]):::class1
-    E([С первоначальным раскроем]):::class1
-    F([Без первоначального раскроя]):::class1
+    E([С первоначальным раскроем]):::class2
+    F([Без первоначального раскроя]):::class2
     G([Раскройка текстолита]):::class1
-    H([Раскройка текстолита]):::class1
+    H([Раскройка текстолита]):::class2
     Z-->A;
     Z-->B;
 
