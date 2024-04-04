@@ -9,11 +9,12 @@ Open Logical Tools Architecture
 graph TD;
 classDef class1 fill:#455744, stroke:#000, stroke-width:4px
 classDef class2 fill:#544457, stroke:#000, stroke-width:4px
+classDef class3 fill:#5e4832, stroke:#000, stroke-width:4px
 
     Z([Нам нужны печатные платы]):::class1
     A([Отдельными платами]):::class1
     B([Кучей плат на одном листе]):::class2
-    C([С технологическими полями]):::class1
+    C([С технологическими полями]):::class3
     D([В чистовой размер]):::class1
     E([С первоначальным раскроем]):::class2
     F([Без первоначального раскроя]):::class2
