@@ -36,19 +36,21 @@ classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
 
 ```mermaid
 graph TD;
-classDef class1 fill:#455744, stroke:#000, stroke-width:4px
-classDef class2 fill:#544457, stroke:#000, stroke-width:4px
-classDef class3 fill:#5e4832, stroke:#000, stroke-width:4px
+classDef class1 fill:#544457, stroke:#000, stroke-width:4px
+classDef class2 fill:#32465e, stroke:#000, stroke-width:4px
+classDef class3 fill:#455744, stroke:#000, stroke-width:4px
+classDef class4 fill:#5e4832, stroke:#000, stroke-width:4px
+classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
 
-    Z([Нам нужны печатные платы]):::class1
-    A([Отдельными платами]):::class1
+    Z([Нам нужны печатные платы]):::class3
+    A([Отдельными платами]):::class3
     B([Кучей плат на одном листе]):::class2
-    C([С технологическими полями]):::class3
-    D([В чистовой размер]):::class1
-    E([С первоначальным раскроем]):::class2
-    F([Без первоначального раскроя]):::class2
-    G([Раскройка текстолита]):::class1
-    H([Раскройка текстолита]):::class2
+    C([С технологическими полями]):::class4
+    D([В чистовой размер]):::class3
+    E([С первоначальным раскроем]):::class4
+    F([Без первоначального раскроя]):::class4
+    G([Раскройка текстолита]):::class3
+    H([Раскройка текстолита]):::class4
     Z-->A;
     Z-->B;
 
