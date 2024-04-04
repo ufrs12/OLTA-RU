@@ -85,7 +85,7 @@ classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
     A([ЛУТ]):::class5
     B([Фоторезист]):::class3
     C([Пленочный]):::class3
-    D([Жидкий]):::class4
+    D([Жидкий]):::class2
 
     Z-->A;
     Z-->B;
