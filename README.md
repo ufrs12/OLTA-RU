@@ -6,7 +6,7 @@ Open Logical Tools Architecture
 ## Варианты и этапы создания печатных плат
 ```mermaid
 graph TD;
-    A-->B;
+    A-->"B  ывап";
     A-->C;
     B-->Ы;
     C-->Ы;
