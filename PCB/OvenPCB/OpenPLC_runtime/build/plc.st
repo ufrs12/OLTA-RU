@@ -98,10 +98,24 @@ PROGRAM OvenPCB
     mb_PWM_freq_l AT %QW101 : INT;
     mb_PWM_duty AT %QW102 : INT;
     mb_Temp AT %IW100 : INT;
+    mbsl_Temp AT %QW0 : INT;
+  END_VAR
+  VAR
+    _TMP_MUL26_OUT : INT;
+    _TMP_INT_TO_REAL34_OUT : REAL;
+    _TMP_DIV28_OUT : REAL;
+    _TMP_DIV32_OUT : REAL;
+    _TMP_REAL_TO_INT3_OUT : INT;
   END_VAR
 
   mb_PWM_freq_h := 31;
   mb_PWM_duty := 50;
+  _TMP_MUL26_OUT := MUL(mb_Temp, 5);
+  _TMP_INT_TO_REAL34_OUT := INT_TO_REAL(_TMP_MUL26_OUT);
+  _TMP_DIV28_OUT := DIV(_TMP_INT_TO_REAL34_OUT, 10.23);
+  _TMP_DIV32_OUT := DIV(_TMP_DIV28_OUT, 1.88);
+  _TMP_REAL_TO_INT3_OUT := REAL_TO_INT(_TMP_DIV32_OUT);
+  mbsl_Temp := _TMP_REAL_TO_INT3_OUT;
 END_PROGRAM
 
 

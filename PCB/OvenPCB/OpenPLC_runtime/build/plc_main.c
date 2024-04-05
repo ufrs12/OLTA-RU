@@ -104,6 +104,8 @@ IEC_INT var2;
 IEC_INT *__QW102 = &var2;
 IEC_INT var3;
 IEC_INT *__IW100 = &var3;
+IEC_INT var4;
+IEC_INT *__QW0 = &var4;
 /**
  * Win32 specific code
  **/

@@ -209,6 +209,13 @@ void OVENPCB_init__(OVENPCB *data__, BOOL retain) {
   __INIT_LOCATED_VALUE(data__->MB_PWM_DUTY,0)
   __INIT_LOCATED(INT,__IW100,data__->MB_TEMP,retain)
   __INIT_LOCATED_VALUE(data__->MB_TEMP,0)
+  __INIT_LOCATED(INT,__QW0,data__->MBSL_TEMP,retain)
+  __INIT_LOCATED_VALUE(data__->MBSL_TEMP,0)
+  __INIT_VAR(data__->_TMP_MUL26_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_INT_TO_REAL34_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_DIV28_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_DIV32_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_REAL_TO_INT3_OUT,0,retain)
 }
 
 // Code part
@@ -217,6 +224,31 @@ void OVENPCB_body__(OVENPCB *data__) {
 
   __SET_LOCATED(data__->,MB_PWM_FREQ_H,,31);
   __SET_LOCATED(data__->,MB_PWM_DUTY,,50);
+  __SET_VAR(data__->,_TMP_MUL26_OUT,,MUL__INT__INT(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (UINT)2,
+    (INT)__GET_LOCATED(data__->MB_TEMP,),
+    (INT)5));
+  __SET_VAR(data__->,_TMP_INT_TO_REAL34_OUT,,INT_TO_REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (INT)__GET_VAR(data__->_TMP_MUL26_OUT,)));
+  __SET_VAR(data__->,_TMP_DIV28_OUT,,DIV__REAL__REAL__REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (REAL)__GET_VAR(data__->_TMP_INT_TO_REAL34_OUT,),
+    (REAL)10.23));
+  __SET_VAR(data__->,_TMP_DIV32_OUT,,DIV__REAL__REAL__REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (REAL)__GET_VAR(data__->_TMP_DIV28_OUT,),
+    (REAL)1.88));
+  __SET_VAR(data__->,_TMP_REAL_TO_INT3_OUT,,REAL_TO_INT(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (REAL)__GET_VAR(data__->_TMP_DIV32_OUT,)));
+  __SET_LOCATED(data__->,MBSL_TEMP,,__GET_VAR(data__->_TMP_REAL_TO_INT3_OUT,));
 
   goto __end;
 
