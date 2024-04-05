@@ -102,12 +102,17 @@ classDef class3 fill:#455744, stroke:#000, stroke-width:4px
 classDef class4 fill:#5e4832, stroke:#000, stroke-width:4px
 classDef class5 fill:#5e3332, stroke:#000, stroke-width:4px
 
-    Z([Варианты экспонирования])
-    A([Фотошаблон]):::class3
-    B([Прямое]):::class2
+   Z([Варианты экспонирования])
+   A([Фотошаблон]):::class3
+   B([Прямое]):::class2
+   C([Лазером с ЧПУ]):::class2
+   D([Через матрицу]):::class2
 
-    Z-->A;
-    Z-->B;
+   Z-->A;
+   Z-->B;
+   B-->C;
+   B-->D;
+
 ```
 
 ```mermaid
