@@ -105,7 +105,23 @@ IEC_INT *__QW102 = &var2;
 IEC_INT var3;
 IEC_INT *__IW100 = &var3;
 IEC_INT var4;
-IEC_INT *__QW0 = &var4;
+IEC_INT *__IW101 = &var4;
+IEC_INT var5;
+IEC_INT *__QW0 = &var5;
+IEC_INT var6;
+IEC_INT *__QW1 = &var6;
+IEC_REAL var7;
+IEC_REAL *__MD1 = &var7;
+IEC_REAL var8;
+IEC_REAL *__MD2 = &var8;
+IEC_REAL var9;
+IEC_REAL *__MD3 = &var9;
+IEC_REAL var10;
+IEC_REAL *__MD4 = &var10;
+IEC_REAL var11;
+IEC_REAL *__MD5 = &var11;
+IEC_BOOL var12;
+IEC_BOOL *__QX0_0 = &var12;
 /**
  * Win32 specific code
  **/

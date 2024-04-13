@@ -10,6 +10,7 @@
   <ElemGroups>
     <ElemGroup active="true" dataBlock="HoldingRegisters" address="0" name="">
       <Elem type="ushort" readOnly="false" isBitMask="false" tagCode="Temp" name="Temp" />
+      <Elem type="ushort" readOnly="false" isBitMask="false" tagCode="TempDS18B20" name="TempDS18B20" />
     </ElemGroup>
   </ElemGroups>
   <Cmds />

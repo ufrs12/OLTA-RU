@@ -3,7 +3,7 @@
   <Cnl>
     <CnlNum>101</CnlNum>
     <Active>true</Active>
-    <Name>OvenPCB - Temp</Name>
+    <Name>TempPT1000</Name>
     <DataTypeID xsi:nil="true" />
     <DataLen xsi:nil="true" />
     <CnlTypeID>2</CnlTypeID>
@@ -11,7 +11,8 @@
     <DeviceNum>1</DeviceNum>
     <TagNum xsi:nil="true" />
     <TagCode>Temp</TagCode>
-    <FormulaEnabled>false</FormulaEnabled>
+    <FormulaEnabled>true</FormulaEnabled>
+    <InFormula>Cnl / 10</InFormula>
     <FormatID xsi:nil="true" />
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
@@ -19,5 +20,26 @@
     <LimID xsi:nil="true" />
     <ArchiveMask xsi:nil="true" />
     <EventMask>81</EventMask>
+  </Cnl>
+  <Cnl>
+    <CnlNum>102</CnlNum>
+    <Active>true</Active>
+    <Name>Temp18B20</Name>
+    <DataTypeID xsi:nil="true" />
+    <DataLen xsi:nil="true" />
+    <CnlTypeID>2</CnlTypeID>
+    <ObjNum xsi:nil="true" />
+    <DeviceNum>1</DeviceNum>
+    <TagNum xsi:nil="true" />
+    <TagCode>TempDS18B20</TagCode>
+    <FormulaEnabled>true</FormulaEnabled>
+    <InFormula>Cnl / 10</InFormula>
+    <FormatID xsi:nil="true" />
+    <OutFormatID xsi:nil="true" />
+    <QuantityID xsi:nil="true" />
+    <UnitID xsi:nil="true" />
+    <LimID xsi:nil="true" />
+    <ArchiveMask xsi:nil="true" />
+    <EventMask xsi:nil="true" />
   </Cnl>
 </ArrayOfCnl>

@@ -22,7 +22,7 @@
       <Server />
       <Database />
       <Username />
-      <Password />
+      <Password>C8080E774B59B0C6694063BDE2428352</Password>
       <ConnectionString />
     </DbConnectionOptions>
     <DownloadOptions>

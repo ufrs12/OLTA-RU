@@ -209,21 +209,44 @@ void OVENPCB_init__(OVENPCB *data__, BOOL retain) {
   __INIT_LOCATED_VALUE(data__->MB_PWM_DUTY,0)
   __INIT_LOCATED(INT,__IW100,data__->MB_TEMP,retain)
   __INIT_LOCATED_VALUE(data__->MB_TEMP,0)
+  __INIT_LOCATED(INT,__IW101,data__->MB_TEMPDS18B20,retain)
+  __INIT_LOCATED_VALUE(data__->MB_TEMPDS18B20,0)
   __INIT_LOCATED(INT,__QW0,data__->MBSL_TEMP,retain)
   __INIT_LOCATED_VALUE(data__->MBSL_TEMP,0)
+  __INIT_LOCATED(INT,__QW1,data__->MBSL_TEMPDS18B20,retain)
+  __INIT_LOCATED_VALUE(data__->MBSL_TEMPDS18B20,0)
+  __INIT_LOCATED(REAL,__MD1,data__->PID_OUT,retain)
+  __INIT_LOCATED_VALUE(data__->PID_OUT,0)
+  __INIT_LOCATED(REAL,__MD2,data__->PID_P,retain)
+  __INIT_LOCATED_VALUE(data__->PID_P,-0.05)
+  __INIT_LOCATED(REAL,__MD3,data__->PID_I,retain)
+  __INIT_LOCATED_VALUE(data__->PID_I,0.05)
+  __INIT_LOCATED(REAL,__MD4,data__->PID_D,retain)
+  __INIT_LOCATED_VALUE(data__->PID_D,0.05)
+  __INIT_LOCATED(REAL,__MD5,data__->PID_SP,retain)
+  __INIT_LOCATED_VALUE(data__->PID_SP,450.0)
+  __INIT_LOCATED(BOOL,__QX0_0,data__->PID_AUTO,retain)
+  __INIT_LOCATED_VALUE(data__->PID_AUTO,__BOOL_LITERAL(TRUE))
+  PID_init__(&data__->PID0,retain);
   __INIT_VAR(data__->_TMP_MUL26_OUT,0,retain)
   __INIT_VAR(data__->_TMP_INT_TO_REAL34_OUT,0,retain)
   __INIT_VAR(data__->_TMP_DIV28_OUT,0,retain)
   __INIT_VAR(data__->_TMP_DIV32_OUT,0,retain)
   __INIT_VAR(data__->_TMP_REAL_TO_INT3_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_SUB37_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_INT_TO_REAL62_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_SUB65_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_MUL52_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_REAL_TO_INT54_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_LIMIT60_OUT,0,retain)
+  __INIT_VAR(data__->_TMP_INT_TO_REAL64_OUT,0,retain)
 }
 
 // Code part
 void OVENPCB_body__(OVENPCB *data__) {
   // Initialise TEMP variables
 
-  __SET_LOCATED(data__->,MB_PWM_FREQ_H,,31);
-  __SET_LOCATED(data__->,MB_PWM_DUTY,,50);
+  __SET_LOCATED(data__->,MBSL_TEMPDS18B20,,__GET_LOCATED(data__->MB_TEMPDS18B20,));
   __SET_VAR(data__->,_TMP_MUL26_OUT,,MUL__INT__INT(
     (BOOL)__BOOL_LITERAL(TRUE),
     NULL,
@@ -238,7 +261,7 @@ void OVENPCB_body__(OVENPCB *data__) {
     (BOOL)__BOOL_LITERAL(TRUE),
     NULL,
     (REAL)__GET_VAR(data__->_TMP_INT_TO_REAL34_OUT,),
-    (REAL)10.23));
+    (REAL)1.023));
   __SET_VAR(data__->,_TMP_DIV32_OUT,,DIV__REAL__REAL__REAL(
     (BOOL)__BOOL_LITERAL(TRUE),
     NULL,
@@ -248,7 +271,53 @@ void OVENPCB_body__(OVENPCB *data__) {
     (BOOL)__BOOL_LITERAL(TRUE),
     NULL,
     (REAL)__GET_VAR(data__->_TMP_DIV32_OUT,)));
-  __SET_LOCATED(data__->,MBSL_TEMP,,__GET_VAR(data__->_TMP_REAL_TO_INT3_OUT,));
+  __SET_VAR(data__->,_TMP_SUB37_OUT,,SUB__INT__INT__INT(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (INT)__GET_VAR(data__->_TMP_REAL_TO_INT3_OUT,),
+    (INT)250));
+  __SET_LOCATED(data__->,MBSL_TEMP,,__GET_VAR(data__->_TMP_SUB37_OUT,));
+  __SET_LOCATED(data__->,MB_PWM_FREQ_H,,31);
+  __SET_VAR(data__->,_TMP_INT_TO_REAL62_OUT,,INT_TO_REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (INT)__GET_LOCATED(data__->MBSL_TEMP,)));
+  __SET_VAR(data__->PID0.,AUTO,,__GET_LOCATED(data__->PID_AUTO,));
+  __SET_VAR(data__->PID0.,PV,,__GET_VAR(data__->_TMP_INT_TO_REAL62_OUT,));
+  __SET_VAR(data__->PID0.,SP,,__GET_LOCATED(data__->PID_SP,));
+  __SET_VAR(data__->PID0.,X0,,0.0);
+  __SET_VAR(data__->PID0.,KP,,__GET_LOCATED(data__->PID_P,));
+  __SET_VAR(data__->PID0.,TR,,__GET_LOCATED(data__->PID_I,));
+  __SET_VAR(data__->PID0.,TD,,__GET_LOCATED(data__->PID_D,));
+  __SET_VAR(data__->PID0.,CYCLE,,__time_to_timespec(1, 20, 0, 0, 0, 0));
+  PID_body__(&data__->PID0);
+  __SET_VAR(data__->,_TMP_SUB65_OUT,,SUB__REAL__REAL__REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (REAL)__GET_VAR(data__->PID0.XOUT,),
+    (REAL)__GET_VAR(data__->_TMP_INT_TO_REAL62_OUT,)));
+  __SET_VAR(data__->,_TMP_MUL52_OUT,,MUL__REAL__REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (UINT)2,
+    (REAL)__GET_VAR(data__->_TMP_SUB65_OUT,),
+    (REAL)10.0));
+  __SET_VAR(data__->,_TMP_REAL_TO_INT54_OUT,,REAL_TO_INT(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (REAL)__GET_VAR(data__->_TMP_MUL52_OUT,)));
+  __SET_VAR(data__->,_TMP_LIMIT60_OUT,,LIMIT__INT__INT__INT__INT(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (INT)0,
+    (INT)__GET_VAR(data__->_TMP_REAL_TO_INT54_OUT,),
+    (INT)1000));
+  __SET_LOCATED(data__->,MB_PWM_DUTY,,__GET_VAR(data__->_TMP_LIMIT60_OUT,));
+  __SET_VAR(data__->,_TMP_INT_TO_REAL64_OUT,,INT_TO_REAL(
+    (BOOL)__BOOL_LITERAL(TRUE),
+    NULL,
+    (INT)__GET_VAR(data__->_TMP_REAL_TO_INT54_OUT,)));
+  __SET_LOCATED(data__->,PID_OUT,,__GET_VAR(data__->_TMP_INT_TO_REAL64_OUT,));
 
   goto __end;
 
