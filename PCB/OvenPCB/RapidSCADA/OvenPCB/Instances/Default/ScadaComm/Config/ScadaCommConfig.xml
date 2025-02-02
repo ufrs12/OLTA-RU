@@ -48,9 +48,9 @@
       </LineOptions>
       <Channel type="TcpClient" driver="DrvCnlBasic">
         <Option name="Behavior" value="Master" />
-        <Option name="ConnectionMode" value="Individual" />
+        <Option name="ConnectionMode" value="Shared" />
         <Option name="DisconnectOnError" value="false" />
-        <Option name="Host" value="192.168.137.3" />
+        <Option name="Host" value="192.168.1.2" />
         <Option name="ReconnectAfter" value="5" />
         <Option name="StayConnected" value="true" />
         <Option name="TcpPort" value="502" />
