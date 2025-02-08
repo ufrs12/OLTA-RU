@@ -13,10 +13,10 @@
     <TagCode>Temp</TagCode>
     <FormulaEnabled>true</FormulaEnabled>
     <InFormula>Cnl / 10</InFormula>
-    <FormatID xsi:nil="true" />
+    <FormatID>3</FormatID>
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
-    <UnitID xsi:nil="true" />
+    <UnitID>22</UnitID>
     <LimID xsi:nil="true" />
     <ArchiveMask xsi:nil="true" />
     <EventMask>81</EventMask>
@@ -154,7 +154,7 @@
     <TagNum xsi:nil="true" />
     <TagCode>PID_auto</TagCode>
     <FormulaEnabled>false</FormulaEnabled>
-    <FormatID>21</FormatID>
+    <FormatID>102</FormatID>
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
     <UnitID xsi:nil="true" />
@@ -166,6 +166,7 @@
     <CnlNum>109</CnlNum>
     <Active>true</Active>
     <Name>OvenPCB - PWM_duty</Name>
+    <Code />
     <DataTypeID xsi:nil="true" />
     <DataLen xsi:nil="true" />
     <CnlTypeID>2</CnlTypeID>
@@ -173,11 +174,13 @@
     <DeviceNum>1</DeviceNum>
     <TagNum xsi:nil="true" />
     <TagCode>PWM_duty</TagCode>
-    <FormulaEnabled>false</FormulaEnabled>
-    <FormatID xsi:nil="true" />
+    <FormulaEnabled>true</FormulaEnabled>
+    <InFormula>Cnl / 10</InFormula>
+    <OutFormula />
+    <FormatID>3</FormatID>
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
-    <UnitID xsi:nil="true" />
+    <UnitID>101</UnitID>
     <LimID xsi:nil="true" />
     <ArchiveMask xsi:nil="true" />
     <EventMask>81</EventMask>
@@ -186,6 +189,7 @@
     <CnlNum>110</CnlNum>
     <Active>true</Active>
     <Name>OvenPCB - PWM_duty_manual</Name>
+    <Code />
     <DataTypeID xsi:nil="true" />
     <DataLen xsi:nil="true" />
     <CnlTypeID>2</CnlTypeID>
@@ -193,11 +197,13 @@
     <DeviceNum>1</DeviceNum>
     <TagNum xsi:nil="true" />
     <TagCode>PWM_duty_manual</TagCode>
-    <FormulaEnabled>false</FormulaEnabled>
-    <FormatID xsi:nil="true" />
+    <FormulaEnabled>true</FormulaEnabled>
+    <InFormula />
+    <OutFormula>Cmd *10</OutFormula>
+    <FormatID>3</FormatID>
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
-    <UnitID xsi:nil="true" />
+    <UnitID>101</UnitID>
     <LimID xsi:nil="true" />
     <ArchiveMask xsi:nil="true" />
     <EventMask>81</EventMask>

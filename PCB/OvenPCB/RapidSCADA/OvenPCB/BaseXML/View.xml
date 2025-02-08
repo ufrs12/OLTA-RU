@@ -16,4 +16,12 @@
     <Hidden>false</Hidden>
     <ObjNum xsi:nil="true" />
   </View>
+  <View>
+    <ViewID>3</ViewID>
+    <Path>OvenPCB\OvenPCB.sch</Path>
+    <ViewTypeID xsi:nil="true" />
+    <Ord xsi:nil="true" />
+    <Hidden>false</Hidden>
+    <ObjNum xsi:nil="true" />
+  </View>
 </ArrayOfView>

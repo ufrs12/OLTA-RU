@@ -235,4 +235,13 @@
     <Frmt>G</Frmt>
     <Descr>Добавляйте пользовательские элементы, начиная с этой строки</Descr>
   </Format>
+  <Format>
+    <FormatID>102</FormatID>
+    <Name>Авто/Ручной</Name>
+    <IsNumber>false</IsNumber>
+    <IsEnum>true</IsEnum>
+    <IsDate>false</IsDate>
+    <IsString>false</IsString>
+    <Frmt>Ручной; Авто</Frmt>
+  </Format>
 </ArrayOfFormat>
