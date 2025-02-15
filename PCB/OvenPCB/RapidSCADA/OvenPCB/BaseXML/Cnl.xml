@@ -53,8 +53,9 @@
     <DeviceNum>1</DeviceNum>
     <TagNum xsi:nil="true" />
     <TagCode>PID_OUT</TagCode>
-    <FormulaEnabled>false</FormulaEnabled>
-    <FormatID xsi:nil="true" />
+    <FormulaEnabled>true</FormulaEnabled>
+    <InFormula>Cnl / 10</InFormula>
+    <FormatID>3</FormatID>
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
     <UnitID xsi:nil="true" />
@@ -133,11 +134,13 @@
     <DeviceNum>1</DeviceNum>
     <TagNum xsi:nil="true" />
     <TagCode>PID_SP</TagCode>
-    <FormulaEnabled>false</FormulaEnabled>
-    <FormatID xsi:nil="true" />
+    <FormulaEnabled>true</FormulaEnabled>
+    <InFormula>Cnl / 10</InFormula>
+    <OutFormula>Cmd *10</OutFormula>
+    <FormatID>3</FormatID>
     <OutFormatID xsi:nil="true" />
     <QuantityID xsi:nil="true" />
-    <UnitID xsi:nil="true" />
+    <UnitID>22</UnitID>
     <LimID xsi:nil="true" />
     <ArchiveMask xsi:nil="true" />
     <EventMask>81</EventMask>

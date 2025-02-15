@@ -28,8 +28,8 @@
       <ID>1</ID>
       <Name />
       <Location>
-        <X>371</X>
-        <Y>112</Y>
+        <X>27</X>
+        <Y>77</Y>
       </Location>
       <Size>
         <Width>465</Width>
@@ -47,8 +47,8 @@
       <ID>4</ID>
       <Name />
       <Location>
-        <X>675</X>
-        <Y>234</Y>
+        <X>331</X>
+        <Y>199</Y>
       </Location>
       <Size>
         <Width>100</Width>
@@ -85,15 +85,15 @@
       <ID>5</ID>
       <Name />
       <Location>
-        <X>677</X>
-        <Y>320</Y>
+        <X>333</X>
+        <Y>285</Y>
       </Location>
       <Size>
         <Width>100</Width>
         <Height>100</Height>
       </Size>
       <ZIndex>0</ZIndex>
-      <ForeColor>PaleVioletRed</ForeColor>
+      <ForeColor>BurlyWood</ForeColor>
       <Font>
         <Name>Cambria</Name>
         <Size>36</Size>
@@ -123,15 +123,15 @@
       <ID>6</ID>
       <Name />
       <Location>
-        <X>500</X>
-        <Y>75</Y>
+        <X>218</X>
+        <Y>15</Y>
       </Location>
       <Size>
         <Width>100</Width>
         <Height>100</Height>
       </Size>
       <ZIndex>0</ZIndex>
-      <ForeColor>DarkSeaGreen</ForeColor>
+      <ForeColor>BurlyWood</ForeColor>
       <Font>
         <Name>Cambria</Name>
         <Size>36</Size>
@@ -152,6 +152,406 @@
       <ShowValue>ShowWithUnit</ShowValue>
       <InCnlNum>108</InCnlNum>
       <CtrlCnlNum>108</CtrlCnlNum>
+    </DynamicText>
+    <DynamicText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>8</ID>
+      <Name />
+      <Location>
+        <X>218</X>
+        <Y>65</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>BurlyWood</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>36</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Дин</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+      <BackColorOnHover />
+      <BorderColorOnHover />
+      <ForeColorOnHover />
+      <UnderlineOnHover>false</UnderlineOnHover>
+      <Action>SendCommand</Action>
+      <ShowValue>ShowWithUnit</ShowValue>
+      <InCnlNum>107</InCnlNum>
+      <CtrlCnlNum>107</CtrlCnlNum>
+    </DynamicText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>9</ID>
+      <Name />
+      <Location>
+        <X>56</X>
+        <Y>15</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>36</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Режим:</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>10</ID>
+      <Name />
+      <Location>
+        <X>56</X>
+        <Y>65</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>36</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Уставка:</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>11</ID>
+      <Name />
+      <Location>
+        <X>530</X>
+        <Y>77</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>24</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>PID-регулятор</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>12</ID>
+      <Name />
+      <Location>
+        <X>562</X>
+        <Y>123</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Kp =</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>13</ID>
+      <Name />
+      <Location>
+        <X>562</X>
+        <Y>158</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Ki =</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>14</ID>
+      <Name />
+      <Location>
+        <X>562</X>
+        <Y>193</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Kd =</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <StaticText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>15</ID>
+      <Name />
+      <Location>
+        <X>562</X>
+        <Y>228</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Out =</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+    </StaticText>
+    <DynamicText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>16</ID>
+      <Name />
+      <Location>
+        <X>622</X>
+        <Y>123</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>BurlyWood</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Дин</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+      <BackColorOnHover />
+      <BorderColorOnHover />
+      <ForeColorOnHover />
+      <UnderlineOnHover>false</UnderlineOnHover>
+      <Action>SendCommand</Action>
+      <ShowValue>ShowWithUnit</ShowValue>
+      <InCnlNum>104</InCnlNum>
+      <CtrlCnlNum>104</CtrlCnlNum>
+    </DynamicText>
+    <DynamicText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>17</ID>
+      <Name />
+      <Location>
+        <X>622</X>
+        <Y>158</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>BurlyWood</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Дин</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+      <BackColorOnHover />
+      <BorderColorOnHover />
+      <ForeColorOnHover />
+      <UnderlineOnHover>false</UnderlineOnHover>
+      <Action>SendCommand</Action>
+      <ShowValue>ShowWithUnit</ShowValue>
+      <InCnlNum>105</InCnlNum>
+      <CtrlCnlNum>105</CtrlCnlNum>
+    </DynamicText>
+    <DynamicText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>18</ID>
+      <Name />
+      <Location>
+        <X>622</X>
+        <Y>193</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>BurlyWood</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Дин</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+      <BackColorOnHover />
+      <BorderColorOnHover />
+      <ForeColorOnHover />
+      <UnderlineOnHover>false</UnderlineOnHover>
+      <Action>SendCommand</Action>
+      <ShowValue>ShowWithUnit</ShowValue>
+      <InCnlNum>106</InCnlNum>
+      <CtrlCnlNum>106</CtrlCnlNum>
+    </DynamicText>
+    <DynamicText>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>19</ID>
+      <Name />
+      <Location>
+        <X>622</X>
+        <Y>228</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor>DarkSeaGreen</ForeColor>
+      <Font>
+        <Name>Cambria</Name>
+        <Size>18</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Дин</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+      <BackColorOnHover />
+      <BorderColorOnHover />
+      <ForeColorOnHover />
+      <UnderlineOnHover>false</UnderlineOnHover>
+      <Action>None</Action>
+      <ShowValue>ShowWithUnit</ShowValue>
+      <InCnlNum>103</InCnlNum>
+      <CtrlCnlNum>0</CtrlCnlNum>
     </DynamicText>
   </Components>
   <Images>
