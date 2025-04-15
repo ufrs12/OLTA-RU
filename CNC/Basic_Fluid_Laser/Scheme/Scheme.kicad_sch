@@ -187,7 +187,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Jack-DC")
-		(at 59.69 153.67 0)
+		(at 72.39 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -196,7 +196,7 @@
 		(fields_autoplaced yes)
 		(uuid "392a7f16-eba1-4eeb-b25f-aaddc5e63a2d")
 		(property "Reference" "J1"
-			(at 59.69 144.78 0)
+			(at 72.39 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -204,7 +204,7 @@
 			)
 		)
 		(property "Value" "Jack-DC"
-			(at 59.69 147.32 0)
+			(at 72.39 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -212,7 +212,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 154.686 0)
+			(at 73.66 147.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -221,7 +221,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 154.686 0)
+			(at 73.66 147.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -230,7 +230,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
-			(at 59.69 153.67 0)
+			(at 72.39 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
