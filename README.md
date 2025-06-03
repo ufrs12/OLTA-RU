@@ -1,4 +1,4 @@
-# OLTA-RU
+# OLTA
 <p align="center">
  <img width="200px" src="https://github.com/ufrs12/OLxA/blob/main/src/logo/OLTA.png" alt="qr"/>
 </p>
