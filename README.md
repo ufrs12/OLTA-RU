@@ -1,6 +1,6 @@
 # OLTA-RU
 <p align="center">
- <img width="200px" src="[src\logo\OLTA.png](https://github.com/ufrs12/OLxA/blob/main/src/logo/OLTA.png)" alt="qr"/>
+ <img width="200px" src="https://github.com/ufrs12/OLxA/blob/main/src/logo/OLTA.png" alt="qr"/>
 </p>
 Open Logical Tools Architecture  
 
