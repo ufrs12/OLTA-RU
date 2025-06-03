@@ -15,7 +15,7 @@
 4. Чем крупней компоненты, тем лучше.
 
 ## Прототипирование
-Проескты станков:
+Проекты станков:
 1. [Циркулярка для текстолита](https://github.com/ufrs12/OLTA-PCB-Saw)
 2. [Станок для зачистки текстолита](https://github.com/ufrs12/OLTA-PCB-Cleaning-machine)
 3. [Резак рулонов фоторезиста](https://github.com/ufrs12/OLTA-PCB-ROLL-CUTTER)
